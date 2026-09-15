@@ -11,6 +11,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<script src="https://link.msgsndr.com/js/external-tracking.js" data-tracking-id="tk_c30e8f109f3b41e4b0a06d918ae654d5"></script>
 <style>
 /* Coastal Solar Solutions: Google Ads landing page (ev-charger-installation)
    Design DNA matched to coastalsolarsolutions.com.au. Built by NetWorth Digital. */
@@ -81,8 +82,21 @@ h2{font-weight:600;font-size:24px;line-height:34px;letter-spacing:-0.24px;color:
 
 /* Header */
 .header{position:sticky;top:0;z-index:50;background:var(--white);height:80px;box-shadow:0 1px 4px rgba(0,0,0,0.08)}
-.header .container{height:100%;display:flex;align-items:center;justify-content:space-between}
+.header .container{height:100%;display:flex;align-items:center;justify-content:space-between;gap:24px}
 .header .logo{width:150px;height:auto}
+.nav{display:none;align-items:center;gap:28px;margin-left:auto;margin-right:8px}
+.nav a{color:var(--black);font-size:14px;line-height:20px;font-weight:300;white-space:nowrap;transition:color .15s ease}
+.nav a:hover{color:var(--orange)}
+@media (min-width:992px){.nav{display:flex}}
+@media (min-width:992px) and (max-width:1199px){.nav{gap:18px}.nav a{font-size:13px}}
+
+/* GHL embedded form */
+.ghl-form{width:100%;min-height:600px}
+.ghl-form iframe{width:100%;min-height:600px;border:none;border-radius:2px;display:block}
+.form-card.embed{padding:16px}
+.form-card.embed h2{padding:16px 16px 0}
+.form-card.embed .intro{padding:0 16px}
+.hero .form-card.embed{margin-top:0}
 
 /* Hero */
 .hero{position:relative;color:var(--white);background:#3C3C3C var(--hero-image) center/cover no-repeat;padding:128px 0 160px;overflow:hidden}
@@ -276,6 +290,15 @@ body{padding-bottom:80px}
     <a href="#top" aria-label="Coastal Solar Solutions">
       <img class="logo" src="../images/logo.png" alt="Coastal Solar Solutions" width="452" height="150">
     </a>
+    <nav class="nav" aria-label="Coastal Solar Solutions website">
+      <a href="https://coastalsolarsolutions.com.au/residential-solar/" target="_blank" rel="noopener">Residential Solar</a>
+      <a href="https://coastalsolarsolutions.com.au/solar-battery-storage-central-coast/" target="_blank" rel="noopener">Battery Storage</a>
+      <a href="https://coastalsolarsolutions.com.au/electric-vehicle-charging/" target="_blank" rel="noopener">EV Charging</a>
+      <a href="https://coastalsolarsolutions.com.au/solar-system-repair-and-maintenance/" target="_blank" rel="noopener">Repairs</a>
+      <a href="https://coastalsolarsolutions.com.au/our-work/" target="_blank" rel="noopener">Our Work</a>
+      <a href="https://coastalsolarsolutions.com.au/reviews/" target="_blank" rel="noopener">Reviews</a>
+      <a href="https://coastalsolarsolutions.com.au/contact-us/" target="_blank" rel="noopener">Contact</a>
+    </nav>
     <a class="btn sm" href="#quote" data-scroll>Get My EV Charger Quote</a>
   </div>
 </header>
@@ -526,201 +549,61 @@ body{padding-bottom:80px}
   <a class="btn secondary" href="tel:0485077614">Call Now</a>
 </div>
 
-<!-- FORM TEMPLATE (rendered into the hero card on desktop and the quote section) -->
-<template id="quote-form">
-  <h2>Get My EV Charger Quote</h2>
-  <p class="intro">Takes 60 seconds. Fixed price within 24 hours.</p>
-  <div class="progress"><span></span></div>
-  <form novalidate autocomplete="on">
-    <input type="hidden" name="utm_source"><input type="hidden" name="utm_medium"><input type="hidden" name="utm_campaign"><input type="hidden" name="utm_term"><input type="hidden" name="utm_content"><input type="hidden" name="gclid"><input type="hidden" name="page_url"><input type="hidden" name="form_location"><input type="hidden" name="landing_page" value="ev-charger-installation">
-    <input type="hidden" name="service"><input type="hidden" name="property_type"><input type="hidden" name="timeframe">
-
-    <div class="step active" data-step="1">
-      <div class="step-q">What do you need?</div>
-      <div class="opts grid2" data-field="service">
-        <button type="button" class="opt">EV charger for my existing solar</button>
-        <button type="button" class="opt">EV charger, no solar yet</button>
-        <button type="button" class="opt">EV charger and solar together</button>
-        <button type="button" class="opt">EV charger and battery</button>
-        <button type="button" class="opt">Chargers for my business or fleet</button>
-      </div>
-    </div>
-
-    <div class="step" data-step="2">
-      <div class="step-q">What type of property?</div>
-      <div class="opts" data-field="property_type">
-        <button type="button" class="opt">Home I own</button>
-        <button type="button" class="opt">Business or farm</button>
-        <button type="button" class="opt">Rental or investment property</button>
-        <button type="button" class="opt">Rural or off-grid property</button>
-      </div>
-      <div class="step-nav"><button type="button" class="btn-back">Back</button></div>
-    </div>
-
-    <div class="step" data-step="3">
-      <div class="step-q">When do you want it done?</div>
-      <div class="opts" data-field="timeframe">
-        <button type="button" class="opt">As soon as possible</button>
-        <button type="button" class="opt">Before my EV arrives</button>
-        <button type="button" class="opt">Within three months</button>
-        <button type="button" class="opt">Just comparing options</button>
-      </div>
-      <div class="step-nav"><button type="button" class="btn-back">Back</button></div>
-    </div>
-
-    <div class="step" data-step="4">
-      <div class="step-q">Where is the property?</div>
-      <div class="two">
-        <div class="field"><label>Suburb</label><input type="text" name="suburb" autocomplete="address-level2" required><div class="err">Enter your suburb</div></div>
-        <div class="field"><label>Postcode</label><input type="text" name="postcode" inputmode="numeric" pattern="[0-9]{4}" maxlength="4" autocomplete="postal-code" required><div class="err">Enter a 4-digit postcode</div></div>
-      </div>
-      <div class="step-nav"><button type="button" class="btn md btn-next">Next</button><button type="button" class="btn-back">Back</button></div>
-    </div>
-
-    <div class="step" data-step="5">
-      <div class="step-q">Where should we send your quote?</div>
-      <div class="field"><label>Full Name</label><input type="text" name="full_name" autocomplete="name" required><div class="err">Enter your name</div></div>
-      <div class="field"><label>Mobile</label><input type="tel" name="phone" inputmode="tel" autocomplete="tel" required><div class="err">Enter a valid Australian mobile number</div></div>
-      <div class="field"><label>Email</label><input type="email" name="email" inputmode="email" autocomplete="email" required><div class="err">Enter a valid email address</div></div>
-      <button type="submit" class="btn lg block">Get My EV Charger Quote</button>
-      <div class="step-nav"><button type="button" class="btn-back">Back</button></div>
-    </div>
-
-    <div class="form-foot">
-      <p>Your details stay with Coastal Solar Solutions. No spam, no reselling.</p>
-      <p>Prefer to talk? <a href="tel:0485077614">Call 0485 077 614</a>.</p>
-    </div>
-  </form>
-  <div class="thanks">
-    <i class="fa-solid fa-circle-check"></i>
-    <h2>Thanks, <span class="thanks-name"></span>.</h2>
-    <p>One of our licensed electricians will be in touch within 24 hours to confirm your charger and book the install.</p>
-    <p class="mt16">Need us sooner? <a href="tel:0485077614">Call 0485 077 614</a>.</p>
-  </div>
-</template>
+<!-- GHL NATIVE FORM (LeadConnector inline embed). One iframe, moved between the hero card (desktop) and the quote section (mobile). -->
+<div id="ghl-form-holder" hidden>
+<div class="ghl-form">
+<iframe
+    src="https://api.leadconnectorhq.com/widget/form/kLBCl7AnenhFvoYT0Etn"
+    style="width:100%;height:100%;border:none;border-radius:8px"
+    id="inline-kLBCl7AnenhFvoYT0Etn"
+    data-layout="{'id':'INLINE'}"
+    data-trigger-type="alwaysShow"
+    data-trigger-value=""
+    data-activation-type="alwaysActivated"
+    data-activation-value=""
+    data-deactivation-type="neverDeactivate"
+    data-deactivation-value=""
+    data-form-name="Coastal Solar Solutions EMBED"
+    data-height="1588"
+    data-layout-iframe-id="inline-kLBCl7AnenhFvoYT0Etn"
+    data-form-id="kLBCl7AnenhFvoYT0Etn"
+    data-cookie-consent="true"
+    data-cookie-consent-provider="auto"
+    title="Coastal Solar Solutions EMBED"
+        >
+</iframe>
+</div>
+</div>
+<script src="https://link.msgsndr.com/js/form_embed.js"></script>
 
 <script>
 (function(){
-  /* ---------------------------------------------------------
-     SUBMISSION
-     Set FORM_ENDPOINT to the GHL inbound webhook URL for the
-     Coastal Solar sub-account (Automation > Workflows > Inbound
-     Webhook trigger). The workflow creates or updates the contact,
-     adds the opportunity to the New Lead stage and fires the
-     existing lead notification. Fields posted: full_name, phone,
-     email, suburb, postcode, service, property_type, timeframe,
-     landing_page, utm_source, utm_medium, utm_campaign, utm_term,
-     utm_content, gclid, page_url, form_location.
-     --------------------------------------------------------- */
-  var FORM_ENDPOINT = ""; /* [CONFIRM: GHL inbound webhook URL] */
-
-  var params = new URLSearchParams(location.search);
-  var tracking = {
-    utm_source: params.get("utm_source") || "",
-    utm_medium: params.get("utm_medium") || "",
-    utm_campaign: params.get("utm_campaign") || "",
-    utm_term: params.get("utm_term") || "",
-    utm_content: params.get("utm_content") || "",
-    gclid: params.get("gclid") || "",
-    page_url: location.href
-  };
+  /* The quote form is the LeadConnector inline embed (form kLBCl7AnenhFvoYT0Etn).
+     One iframe is placed in the hero card on desktop and in the quote section on mobile. */
+  var holder = document.getElementById("ghl-form-holder");
+  var formEl = holder.querySelector(".ghl-form");
+  var heroCard = document.querySelector(".hero-form .form-card");
+  var mainCard = document.querySelector('#quote .form-card');
+  var title = "Get My EV Charger Quote", intro = "Takes 60 seconds. Fixed price within 24 hours.";
+  [heroCard, mainCard].forEach(function(c){ if(c){ c.classList.add("embed"); c.innerHTML = '<h2>'+title+'</h2><p class="intro">'+intro+'</p>'; } });
+  function place(){
+    var wide = window.matchMedia("(min-width:992px)").matches;
+    var target = (wide && heroCard) ? heroCard : mainCard;
+    if(target && formEl.parentNode !== target) target.appendChild(formEl);
+  }
+  place();
+  window.addEventListener("resize", place);
+  holder.remove();
 
   function scrollToForm(e){
-    var target = document.getElementById("quote");
-    if(!target) return;
     e.preventDefault();
     var wide = window.matchMedia("(min-width:992px)").matches;
-    var hero = document.querySelector(".hero-form .form-card");
-    var el = (wide && hero) ? hero : target;
+    var el = (wide && heroCard) ? heroCard : document.getElementById("quote");
+    if(!el) return;
     var y = el.getBoundingClientRect().top + window.pageYOffset - 96;
     window.scrollTo({top:y, behavior:"smooth"});
-    setTimeout(function(){
-      var first = el.querySelector(".step.active .opt, .step.active input");
-      if(first) first.focus({preventScroll:true});
-    }, 450);
   }
   document.querySelectorAll("[data-scroll]").forEach(function(a){ a.addEventListener("click", scrollToForm); });
-
-  var tpl = document.getElementById("quote-form");
-
-  function mount(card){
-    card.appendChild(tpl.content.cloneNode(true));
-    var form = card.querySelector("form");
-    var bar = card.querySelector(".progress span");
-    var steps = Array.prototype.slice.call(card.querySelectorAll(".step"));
-    var total = steps.length;
-    var current = 1;
-
-    Object.keys(tracking).forEach(function(k){ var i = form.querySelector('[name="'+k+'"]'); if(i) i.value = tracking[k]; });
-    form.querySelector('[name="form_location"]').value = card.getAttribute("data-form-slot");
-
-    function show(n){
-      current = n;
-      steps.forEach(function(s){ s.classList.toggle("active", +s.getAttribute("data-step") === n); });
-      bar.style.width = (n/total*100) + "%";
-      var active = card.querySelector(".step.active");
-      var top = card.getBoundingClientRect().top;
-      if(top < 60) window.scrollTo({top: card.getBoundingClientRect().top + window.pageYOffset - 96, behavior:"smooth"});
-      var first = active.querySelector("input");
-      if(first) setTimeout(function(){ first.focus({preventScroll:true}); }, 100);
-    }
-
-    card.querySelectorAll(".opts").forEach(function(group){
-      var field = group.getAttribute("data-field");
-      group.querySelectorAll(".opt").forEach(function(btn){
-        btn.addEventListener("click", function(){
-          group.querySelectorAll(".opt").forEach(function(b){ b.classList.remove("selected"); });
-          btn.classList.add("selected");
-          form.querySelector('[name="'+field+'"]').value = btn.textContent.trim();
-          setTimeout(function(){ show(current+1); }, 180);
-        });
-      });
-    });
-
-    card.querySelectorAll(".btn-back").forEach(function(b){ b.addEventListener("click", function(){ if(current>1) show(current-1); }); });
-
-    function validate(stepEl){
-      var ok = true;
-      stepEl.querySelectorAll(".field").forEach(function(f){
-        var input = f.querySelector("input");
-        var v = input.value.trim();
-        var valid = v.length > 0;
-        if(input.name === "postcode") valid = /^[0-9]{4}$/.test(v);
-        if(input.name === "phone") valid = /^(\+?61|0)[2-478](\s?\d){8}$/.test(v.replace(/[\s\-()]/g,"").replace(/^(\+?61)/,"0"));
-        if(input.name === "email") valid = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v);
-        f.classList.toggle("invalid", !valid);
-        if(!valid) ok = false;
-      });
-      if(!ok){ var firstBad = stepEl.querySelector(".field.invalid input"); if(firstBad) firstBad.focus(); }
-      return ok;
-    }
-
-    card.querySelectorAll(".btn-next").forEach(function(b){ b.addEventListener("click", function(){ if(validate(card.querySelector(".step.active"))) show(current+1); }); });
-    card.querySelectorAll("input").forEach(function(i){
-      i.addEventListener("input", function(){ i.closest(".field").classList.remove("invalid"); });
-      i.addEventListener("keydown", function(e){ if(e.key === "Enter" && current === 4){ e.preventDefault(); if(validate(card.querySelector(".step.active"))) show(5); } });
-    });
-
-    form.addEventListener("submit", function(e){
-      e.preventDefault();
-      if(!validate(card.querySelector('.step[data-step="5"]'))) return;
-      var data = {};
-      new FormData(form).forEach(function(v,k){ data[k] = v; });
-      var submitBtn = form.querySelector('[type="submit"]');
-      submitBtn.disabled = true; submitBtn.textContent = "Sending...";
-      function done(){
-        card.querySelector(".thanks-name").textContent = data.full_name.split(" ")[0] || data.full_name;
-        card.classList.add("done");
-        window.scrollTo({top: card.getBoundingClientRect().top + window.pageYOffset - 96, behavior:"smooth"});
-        if(window.dataLayer) window.dataLayer.push({event:"quote_form_submit", form_location:data.form_location, service:data.service, landing_page:data.landing_page});
-      }
-      if(!FORM_ENDPOINT){ console.log("Quote form payload (no endpoint set):", data); done(); return; }
-      fetch(FORM_ENDPOINT, {method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify(data)})
-        .then(done).catch(function(){ done(); });
-    });
-  }
-
-  document.querySelectorAll("[data-form-slot]").forEach(mount);
 })();
 </script>
 </body>
