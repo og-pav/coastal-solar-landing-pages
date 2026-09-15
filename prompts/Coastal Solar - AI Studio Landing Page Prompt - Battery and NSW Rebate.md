@@ -36,9 +36,9 @@ Prepared by NetWorth Digital, 15 September 2026. Purpose: Google Ads Search clic
 | REVIEW_3 | James T Dingle, Google, January 2025 (verbatim in Section 7) | /reviews/ |
 | IMAGES | Site image library saved in the client folder (funnels/images and funnels/images-src) | coastalsolarsolutions.com.au media |
 
-Existing connected GHL form: LeadConnector form ID kLBCl7AnenhFvoYT0Etn. Either embed it in Section 9 or build the native multi-step form below and map it to the same pipeline stage and notification workflow.
+Quote form: the GHL native LeadConnector inline embed, form ID kLBCl7AnenhFvoYT0Etn, in the hero on desktop and the quote section on mobile (Section 9 has the exact embed code).
 
-Build 1 exclusions (do not add): LeadConnector form iframe or embed code unless chosen above, Google tag (gtag.js), Google Tag Manager, Google Ads conversion snippet, Meta Pixel, call tracking scripts, chat widgets, heatmap scripts, any third-party script tag. The only external resources permitted are the Google Fonts stylesheet for Poppins and the Font Awesome 6 stylesheet.
+Scripts permitted: the LeadConnector inline form embed (form_embed.js) and the GHL external tracking script (tk_c30e8f109f3b41e4b0a06d918ae654d5). Do not add Google tag (gtag.js), Google Tag Manager, a Google Ads conversion snippet, Meta Pixel, chat widgets or heatmap scripts.
 
 ---
 
@@ -49,9 +49,9 @@ Build a single-page, mobile-first landing page for Coastal Solar Solutions, a re
 The page follows Alex Hormozi's landing page and Value Equation principles: maximise the dream outcome and perceived likelihood of achievement, minimise time delay and effort/sacrifice. Traffic comes from the Google Ads Search ad group "Battery & NSW Rebate" targeting battery and rebate keywords (home battery rebate nsw, federal battery rebate, solar battery nsw, tesla powerwall central coast, battery rebate 2026) across the areas above. The page has one objective: generate qualified quote requests and phone calls. No navigation menu, no external links, no blog links, no product pages, nothing that leads away from the form or the phone number.
 
 BUILD SCOPE FOR THIS VERSION
-* Use the page builder's native form element for the quote form, or embed LeadConnector form kLBCl7AnenhFvoYT0Etn. Do not link to an external form.
-* Do not add any Google tag, gtag.js, Google Tag Manager container, Google Ads conversion snippet, Meta Pixel, call tracking script, chat widget, heatmap or any third-party script. Tracking is added in a later pass.
-* The only external resources are the Google Fonts stylesheet for Poppins and the Font Awesome 6 stylesheet.
+* The quote form is the GHL native LeadConnector inline embed for form kLBCl7AnenhFvoYT0Etn (exact code in Section 9). Do not build a separate form.
+* Add the GHL external tracking script in the head on every page, exactly: <script src="https://link.msgsndr.com/js/external-tracking.js" data-tracking-id="tk_c30e8f109f3b41e4b0a06d918ae654d5"></script>
+* Do not add any Google tag, gtag.js, Google Tag Manager container, Google Ads conversion snippet, Meta Pixel, chat widget or heatmap script. The only other external resources are the Google Fonts stylesheet for Poppins, the Font Awesome 6 stylesheet and the LeadConnector form_embed.js.
 
 BUSINESS INFORMATION
 Use these details throughout the page:
@@ -119,7 +119,7 @@ Layout and spacing
 
 Header (replaces the site's header; no menu)
 * Slim white top bar, 40px, 1px #EBEBEB bottom border: phone icon + "0485 077 614" (tap-to-call) left, Facebook icon right (static). Text hidden on mobile, icons only.
-* Main header: white, 80px high, shadow 0 1px 4px rgba(0,0,0,0.08), sticky. Logo left at 150px wide (100px on mobile). Right side: small primary button with the page CTA (scrolls to the form). No hamburger, no menu items.
+* Main header: white, 80px high, shadow 0 1px 4px rgba(0,0,0,0.08), sticky. Logo left at 150px wide (100px on mobile). Centre-right: text links to the main website, 14px Poppins 300 black, orange on hover, opening in a new tab: Residential Solar (https://coastalsolarsolutions.com.au/residential-solar/), Battery Storage (/solar-battery-storage-central-coast/), EV Charging (/electric-vehicle-charging/), Repairs (/solar-system-repair-and-maintenance/), Our Work (/our-work/), Reviews (/reviews/), Contact (/contact-us/). Links show at 992px and wider only; on mobile the header is logo plus button, no hamburger. Right side: small primary button with the page CTA (scrolls to the form).
 
 Footer
 * Background #222222, white text, 64px top padding, 32px bottom.
@@ -128,7 +128,7 @@ Footer
 
 GLOBAL RULES
 * Australian English spelling. No em dashes anywhere on the page.
-* Every section has one job. Do not add sections that are not listed here.
+* Every section has one job. Do not add sections that are not listed here. The only links off the page are the header links to coastalsolarsolutions.com.au (new tab), tel:0485077614 and the privacy policy.
 * Every feature is written as a customer benefit. Never list a feature without stating what it does for the customer.
 * Use the specific numbers given. Every package price is prefixed "From" and carries "after rebates, inc GST". Do not invent statistics, reviews, warranty terms, licence numbers or prices. Where a value is marked [CONFIRM], leave the token visible in the copy.
 * Use the Coastal Solar image library supplied; do not generate stock imagery.
@@ -243,19 +243,12 @@ SECTION 10: OBJECTIONS AND FAQ
 
 SECTION 11: QUOTE FORM
 
-* Form card: white on the grey band, 2px radius, 32px padding, max-width 560px centred. On desktop the same form also renders inside the hero on the right. Build with the page builder's native form element or embed LeadConnector form kLBCl7AnenhFvoYT0Etn.
-* Headline (H2): "Get My Battery Quote". Subheadline (16px 300): "Takes 60 seconds. Rebates already deducted on your quote."
-* Multi-step form, one question per step, thin orange progress bar, 48px tap targets, selected option gets a 1px #F39D2F border and #FFF7EC fill:
-  Step 1: What are you after? Battery for my existing solar / Solar and battery together / Replace my old system with solar and battery / Blackout backup for my home / Commercial or farm battery.
-  Step 2: What type of property? Home I own / Business or farm / Rental or investment property / Rural or off-grid property.
-  Step 3: When do you want it done? Before the rebate drops on 1 January / As soon as possible / Within three months / Just comparing options.
-  Step 4: Where is the property? Suburb, Postcode.
-  Step 5: Where should we send your quote? Full Name, Mobile, Email.
-* Do not ask for NMI, bill uploads, meter photos, roof type or retailer. No message box.
-* Submit button (large primary, full width): "Get My Battery Quote".
-* Under the button, 13px grey: "Your details stay with Coastal Solar Solutions. No spam, no reselling." and "Prefer to talk? Call 0485 077 614."
-* On submit, show a thank-you state in the same card: "Thanks, [Full Name]. Steve or one of the crew will be in touch within 24 hours to book your free assessment and confirm your rebate. Need us sooner? Call 0485 077 614."
-* Map the form to the Coastal Solar sub-account pipeline (New Lead stage), fire the existing lead notification workflow, and capture utm_source, utm_medium, utm_campaign, utm_term, utm_content, gclid and a hidden landing_page field set to "battery-rebate-nsw".
+* Form card: white, 2px radius, 16px padding, max-width 560px centred in the quote section. On desktop the same form renders inside the hero on the right. Card title (H2): "Get My Battery Quote". Subheadline (16px 300): "Takes 60 seconds. Rebates already deducted on your quote."
+* The form is the GHL native LeadConnector inline embed, form ID kLBCl7AnenhFvoYT0Etn ("Coastal Solar Solutions EMBED"), placed with this exact code and nothing else:
+  <iframe src="https://api.leadconnectorhq.com/widget/form/kLBCl7AnenhFvoYT0Etn" style="width:100%;height:100%;border:none;border-radius:8px" id="inline-kLBCl7AnenhFvoYT0Etn" data-layout="{'id':'INLINE'}" data-trigger-type="alwaysShow" data-trigger-value="" data-activation-type="alwaysActivated" data-activation-value="" data-deactivation-type="neverDeactivate" data-deactivation-value="" data-form-name="Coastal Solar Solutions EMBED" data-height="1588" data-layout-iframe-id="inline-kLBCl7AnenhFvoYT0Etn" data-form-id="kLBCl7AnenhFvoYT0Etn" data-cookie-consent="true" data-cookie-consent-provider="auto" title="Coastal Solar Solutions EMBED"></iframe>
+  <script src="https://link.msgsndr.com/js/form_embed.js"></script>
+* Render the iframe once only (the id must be unique): in the hero card at 992px and wider, in the quote section below that.
+* Every CTA button on the page scrolls to this form. The form submits to the Coastal Solar sub-account pipeline through the existing form workflow; UTM parameters and gclid are captured by the embed script from the page URL.
 
 SECTION 12: FINAL CTA
 * Full-bleed #F39D2F background, white text, centred, 64px padding. Mirrors the site's orange "Contact Us For Quality Energy Solutions" block.
@@ -299,7 +292,7 @@ Output the complete page with all sections in this order. Where information is m
 8. Approval to state "same business day" reply during business hours.
 9. Three install photos with system size, brands and suburb for the proof captions.
 10. Privacy policy URL (none published on the site).
-11. GHL inbound webhook URL for the native form, or confirmation to embed LeadConnector form kLBCl7AnenhFvoYT0Etn instead.
+11. Confirmation that form kLBCl7AnenhFvoYT0Etn fires the lead notification workflow and lands in the New Lead stage.
 
 ## Sources
 
