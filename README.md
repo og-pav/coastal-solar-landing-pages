@@ -17,10 +17,10 @@ on desktop and in the quote section on mobile.
 
 ## Tracking
 - GHL external tracking: `tk_c30e8f109f3b41e4b0a06d918ae654d5`, in every head.
-- Google Ads: fill `window.CSA` at the top of each page with `AW_ID`,
-  `LEAD_LABEL` and `CALL_LABEL`. Until `AW_ID` is set, nothing loads.
-  Lead fires on `/thank-you/` load and on the LeadConnector submit message,
-  deduped via sessionStorage. Call fires on any `tel:` click.
+- Google Ads: gtag live on every page with conversion ID `AW-18285797349`.
+  Fill `LEAD_LABEL` and `CALL_LABEL` in `window.CSA` to turn on the lead and
+  call conversion events. Lead fires on `/thank-you/` load and on the
+  LeadConnector submit message, deduped via sessionStorage. Call fires on any `tel:` click.
 - Set the GHL form's on-submit redirect to `/thank-you/` for reliable firing.
 
 ## Before go-live

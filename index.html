@@ -11,31 +11,26 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18285797349"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-18285797349');
+</script>
 <script src="https://link.msgsndr.com/js/external-tracking.js" data-tracking-id="tk_c30e8f109f3b41e4b0a06d918ae654d5"></script>
 <script>
-/* =============================================================
-   GOOGLE ADS CONVERSION TRACKING
-   Fill these three values once, from Google Ads > Goals >
-   Conversions. Paste the same values on every page.
-   While AW_ID is empty nothing loads and nothing breaks.
-   ============================================================= */
+/* Conversion action labels. Google Ads > Goals > Conversions > pick the action
+   > Tag setup > the snippet shows send_to: 'AW-18285797349/LABEL'.
+   Paste just the LABEL part below. The AW tag above already fires page views,
+   so ads are tracked now; labels turn on the lead and call conversion events. */
 window.CSA = {
-  AW_ID:       "",   /* e.g. "AW-123456789"        */
-  LEAD_LABEL:  "",   /* form submit conversion label */
-  CALL_LABEL:  ""    /* click-to-call conversion label */
+  AW_ID:      "AW-18285797349",
+  LEAD_LABEL: "",   /* form submit conversion label */
+  CALL_LABEL: ""    /* click-to-call conversion label */
 };
-(function(){
-  var c = window.CSA;
-  if (!c.AW_ID) return;                     /* not configured yet, do nothing */
-  window.dataLayer = window.dataLayer || [];
-  window.gtag = function(){ dataLayer.push(arguments); };
-  gtag('js', new Date());
-  gtag('config', c.AW_ID);
-  var s = document.createElement('script');
-  s.async = true;
-  s.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(c.AW_ID);
-  document.head.appendChild(s);
-})();
 </script>
 <style>
 /* Coastal Solar Solutions: Google Ads landing page (coastal-solar)
