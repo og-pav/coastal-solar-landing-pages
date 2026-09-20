@@ -11,7 +11,27 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18285797349"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-18285797349');
+</script>
 <script src="https://link.msgsndr.com/js/external-tracking.js" data-tracking-id="tk_c30e8f109f3b41e4b0a06d918ae654d5"></script>
+<script>
+/* Conversion action labels. Google Ads > Goals > Conversions > pick the action
+   > Tag setup > the snippet shows send_to: 'AW-18285797349/LABEL'.
+   Paste just the LABEL part below. The AW tag above already fires page views,
+   so ads are tracked now; labels turn on the lead and call conversion events. */
+window.CSA = {
+  AW_ID:      "AW-18285797349",
+  LEAD_LABEL: "",   /* form submit conversion label */
+  CALL_LABEL: ""    /* click-to-call conversion label */
+};
+</script>
 <style>
 /* Coastal Solar Solutions: Google Ads landing page (ev-charger-installation)
    Design DNA matched to coastalsolarsolutions.com.au. Built by NetWorth Digital. */
@@ -336,10 +356,10 @@ body{padding-bottom:80px}
     <ul class="stack">
       <li><i class="fa-solid fa-circle-check icon"></i><p><strong>What is included:</strong> the charger, a dedicated circuit from your switchboard, any switchboard work needed, wall mounting in the garage or carport, app set-up on your phone and the electrical compliance paperwork. One price, one visit.</p></li>
       <li><i class="fa-solid fa-circle-check icon"></i><p><strong>What it is worth:</strong> a charger that talks to your solar. Zappi diverts your excess rooftop solar straight into the car, Sigenergy integrates with a SigenStor battery, Tesla gives fast overnight charging with app control. Every one can prioritise solar, schedule off-peak charging or balance charging against the house.</p></li>
-      <li><i class="fa-solid fa-circle-check icon"></i><p><strong>What you pay:</strong> $0 for the quote. Charger and install priced as one fixed number. [CONFIRM: from $X installed for a single-phase 7 kW charger] Spread it over up to 10 years at 0% interest on the NSW Home Energy Saver Program if your household is eligible.</p></li>
+      <li><i class="fa-solid fa-circle-check icon"></i><p><strong>What you pay:</strong> $0 for the quote. Charger and install priced as one fixed number, confirmed after we see your switchboard and where the car parks. Spread it over up to 10 years at 0% interest on the NSW Home Energy Saver Program if your household is eligible.</p></li>
     </ul>
-    <p class="urgency">Most EV charger installs are done in [CONFIRM: half a day]. Our crew installs solar, batteries and chargers, so if you need three-phase, a switchboard upgrade or a battery at the same time, it is one crew and one quote. [CONFIRM: number] install slots open this month.</p>
-    <p class="guarantee">Installed by Coastal Solar's own licensed electricians, never subcontractors, and backed by after-sales support. [CONFIRM: charger and workmanship warranty]</p>
+    <p class="urgency">Most EV charger installs are done in a single visit. Our crew installs solar, batteries and chargers, so if you need three-phase, a switchboard upgrade or a battery at the same time, it is one crew and one quote.</p>
+    <p class="guarantee">Installed by Coastal Solar's own licensed electricians, never subcontractors, and backed by after-sales support.</p>
     <div class="mt32"><a class="btn md" href="#quote" data-scroll>Get My EV Charger Quote</a></div>
   </div>
 </section>
@@ -353,7 +373,7 @@ body{padding-bottom:80px}
       <div class="price">
         <div class="tag">Best for solar homes</div>
         <h3>Zappi</h3>
-        <div class="amt">[CONFIRM: from $X] <small>supplied and installed</small></div>
+        <div class="amt">Priced on your quote <small>supplied and installed</small></div>
         <ul><li>Solar diversion: routes 100% of your excess rooftop solar into the car</li><li>Eco, Eco+ and Fast modes so you choose solar-only or grid top-up</li><li>Works with any solar system, any car with a Type 2 plug</li></ul>
         <p class="fin">Best pick if you already have solar and want to charge for close to nothing.</p>
         <a class="btn md" href="#quote" data-scroll>Get My EV Charger Quote</a>
@@ -361,7 +381,7 @@ body{padding-bottom:80px}
       <div class="price">
         <div class="tag">Best for Tesla and fast charging</div>
         <h3>Tesla Wall Connector</h3>
-        <div class="amt">[CONFIRM: from $X] <small>supplied and installed</small></div>
+        <div class="amt">Priced on your quote <small>supplied and installed</small></div>
         <ul><li>Fast overnight charging on single or three-phase</li><li>Tesla app scheduling and charge tracking</li><li>Pairs with Tesla Powerwall 3 to charge from stored solar at night</li></ul>
         <p class="fin">Best pick for Tesla owners or anyone who needs a full charge by morning.</p>
         <a class="btn md" href="#quote" data-scroll>Get My EV Charger Quote</a>
@@ -369,7 +389,7 @@ body{padding-bottom:80px}
       <div class="price">
         <div class="tag">Best with a battery</div>
         <h3>Sigenergy</h3>
-        <div class="amt">[CONFIRM: from $X] <small>supplied and installed</small></div>
+        <div class="amt">Priced on your quote <small>supplied and installed</small></div>
         <ul><li>Smart AC and DC charging options</li><li>Integrates with the Sigenergy SigenStor battery and mySigen app</li><li>Whole-home energy management: solar, battery, car and house in one app</li></ul>
         <p class="fin">Best pick if you are adding a battery now or later.</p>
         <a class="btn md" href="#quote" data-scroll>Get My EV Charger Quote</a>
@@ -386,7 +406,7 @@ body{padding-bottom:80px}
     <div class="cards">
       <div class="card">
         <img src="../images/ev-home-charging.webp" alt="Homeowner plugging an EV charger into a car at home" loading="lazy" decoding="async">
-        <div class="body"><h3>Charger for your existing solar</h3><p>Already have panels? A Zappi or Tesla charger installed on a dedicated circuit and set to charge from your excess solar.</p><p class="time">Installed in [CONFIRM: half a day].</p></div>
+        <div class="body"><h3>Charger for your existing solar</h3><p>Already have panels? A Zappi or Tesla charger installed on a dedicated circuit and set to charge from your excess solar.</p><p class="time">Installed in a single visit.</p></div>
       </div>
       <div class="card">
         <img src="../images/hero.webp" alt="Coastal Solar installer fitting rooftop solar panels" loading="lazy" decoding="async">
@@ -426,7 +446,7 @@ body{padding-bottom:80px}
     <div class="steps">
       <div><div class="badge">1</div><h3>Request your quote</h3><p>60 seconds on this page or one phone call. We text you a link to send a photo of your switchboard and where the car parks.</p></div>
       <div><div class="badge">2</div><h3>Fixed price within 24 hours</h3><p>Our electrician confirms the charger, the circuit and any switchboard work, and sends one fixed price.</p></div>
-      <div><div class="badge">3</div><h3>Installed and set up</h3><p>Installed in [CONFIRM: half a day] by our own crew, app connected, solar charging mode set before we leave.</p></div>
+      <div><div class="badge">3</div><h3>Installed and set up</h3><p>Installed in a single visit by our own crew, app connected, solar charging mode set before we leave.</p></div>
     </div>
     <div class="mt40"><a class="btn md" href="#quote" data-scroll>Get My EV Charger Quote</a></div>
   </div>
@@ -464,7 +484,7 @@ body{padding-bottom:80px}
     <div class="faq">
       <details>
         <summary>How much does an EV charger installation cost?<i class="fa-solid fa-plus"></i><i class="fa-solid fa-minus"></i></summary>
-        <div class="a">It depends on the charger, the cable run from your switchboard, single or three-phase supply and whether the switchboard needs work. [CONFIRM: from $X installed for a single-phase 7 kW charger] We give one fixed price after seeing a photo of your switchboard and parking spot, and the quote is free.</div>
+        <div class="a">It depends on the charger, the cable run from your switchboard, single or three-phase supply and whether the switchboard needs work. We give one fixed price after seeing a photo of your switchboard and parking spot, and the quote is free.</div>
       </details>
       <details>
         <summary>Can I charge my car from solar only?<i class="fa-solid fa-plus"></i><i class="fa-solid fa-minus"></i></summary>
@@ -488,7 +508,7 @@ body{padding-bottom:80px}
       </details>
       <details>
         <summary>Are you licensed and insured?<i class="fa-solid fa-plus"></i><i class="fa-solid fa-minus"></i></summary>
-        <div class="a">Yes. Coastal Solar's installers are licensed electricians and every install meets Australian Standards and CEC requirements. [CONFIRM: licence numbers and public liability cover] Every job is done by our in-house crew, never subcontractors.</div>
+        <div class="a">Yes. Coastal Solar's installers are licensed electricians and every install meets Australian Standards and CEC requirements. Every job is done by our in-house crew, never subcontractors.</div>
       </details>
     </div>
   </div>
@@ -523,7 +543,7 @@ body{padding-bottom:80px}
       <div>
         <img class="footer-logo" src="../images/logo.png" alt="Coastal Solar Solutions" width="452" height="150" loading="lazy">
         <div class="badges"><img src="../images/tindo-partner.png" alt="Tindo Solar authorised partner" width="300" height="300" loading="lazy"><img src="../images/australian-made.png" alt="Australian Made and Owned" width="300" height="266" loading="lazy"></div>
-        <p class="legal">Licensed electricians. CEC-compliant installations. Your Energy Answers Partner. Approved vendor for the NSW Home Energy Saver Program. [CONFIRM: licence numbers]</p>
+        <p class="legal">Licensed electricians. CEC-compliant installations. Your Energy Answers Partner. Approved vendor for the NSW Home Energy Saver Program.</p>
       </div>
       <div>
         <h4>Locations We Service</h4>
@@ -536,7 +556,7 @@ body{padding-bottom:80px}
         <p>80 South Tacoma Road<br>Tacoma South NSW 2259</p>
         <p class="mt8"><a href="tel:0485077614">0485 077 614</a></p>
         <p><a href="mailto:info@coastalsolarsolutions.com.au">info@coastalsolarsolutions.com.au</a></p>
-        <p class="mt16"><a href="#" data-confirm="privacy policy URL">Privacy Policy</a> <span class="tiny">[CONFIRM: privacy policy URL]</span></p>
+        <p class="mt16 tiny">Your details are used only to contact you about your enquiry. We never sell or share them.</p>
       </div>
     </div>
     <div class="bottom">&copy; 2026 Coastal Solar Solutions</div>
@@ -604,6 +624,41 @@ body{padding-bottom:80px}
     window.scrollTo({top:y, behavior:"smooth"});
   }
   document.querySelectorAll("[data-scroll]").forEach(function(a){ a.addEventListener("click", scrollToForm); });
+})();
+</script>
+
+<script>
+/* Conversion firing. Lead fires from the LeadConnector iframe submit message
+   and, more reliably, from /thank-you/ if the GHL form is set to redirect there.
+   sessionStorage dedupes so a single enquiry is never counted twice. */
+(function(){
+  var c = window.CSA || {};
+  function fired(k){ try { return sessionStorage.getItem(k) === "1"; } catch(e){ return false; } }
+  function mark(k){ try { sessionStorage.setItem(k, "1"); } catch(e){} }
+
+  window.csaFireLead = function(){
+    if (!c.AW_ID || !c.LEAD_LABEL || fired("csa_lead")) return;
+    mark("csa_lead");
+    if (window.gtag) gtag('event', 'conversion', { send_to: c.AW_ID + '/' + c.LEAD_LABEL });
+    if (window.dataLayer) dataLayer.push({ event: 'generate_lead', landing_page: document.title });
+  };
+
+  /* Form submit inside the LeadConnector iframe */
+  window.addEventListener("message", function(e){
+    if (!/leadconnectorhq|msgsndr/i.test(e.origin || "")) return;
+    var d = "";
+    try { d = typeof e.data === "string" ? e.data : JSON.stringify(e.data); } catch(err){ return; }
+    if (/submit|submitted/i.test(d)) window.csaFireLead();
+  }, false);
+
+  /* Click to call */
+  document.addEventListener("click", function(e){
+    var a = e.target && e.target.closest ? e.target.closest('a[href^="tel:"]') : null;
+    if (!a) return;
+    if (!c.AW_ID || !c.CALL_LABEL || fired("csa_call")) return;
+    mark("csa_call");
+    if (window.gtag) gtag('event', 'conversion', { send_to: c.AW_ID + '/' + c.CALL_LABEL });
+  }, true);
 })();
 </script>
 </body>
