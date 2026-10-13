@@ -123,6 +123,9 @@ h2{font-weight:600;font-size:24px;line-height:34px;letter-spacing:-0.24px;color:
 .hero::before{content:"";position:absolute;inset:0;background:rgba(0,0,0,0.55)}
 .hero .container{position:relative;display:grid;grid-template-columns:1fr;gap:40px;align-items:start}
 .hero p.lead{font-size:16px;line-height:24px;margin-top:16px}
+.offerbar{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+.offerbar li{display:flex;align-items:center;gap:8px;background:var(--orange);color:var(--white);font-weight:500;font-size:13px;line-height:18px;padding:8px 14px;border-radius:2px}
+.offerbar .fa-solid{font-size:13px;color:var(--white)}
 .trust{display:flex;flex-wrap:wrap;gap:12px 24px;margin-top:24px;font-size:14px;line-height:22px}
 .trust li{display:flex;align-items:center;gap:8px}
 .trust .fa-solid{color:var(--orange);font-size:18px}
@@ -329,7 +332,11 @@ body{padding-bottom:80px}
 <section class="hero">
   <div class="container">
     <div>
-      <h1>EV charger installed at home by licensed electricians, set up to charge from your own roof. Central Coast, Newcastle and the Hunter.</h1>
+      <ul class="offerbar">
+        <li><i class="fa-solid fa-gift"></i>Fixed-price EV charger, installed</li>
+        <li><i class="fa-solid fa-gift"></i>Free solar and battery health check</li>
+      </ul>
+      <h1>Fixed-price EV charger, supplied and installed at home by licensed electricians and set up to charge from your own roof. Free health check on your existing solar and battery while we are there.</h1>
       <p class="lead">Sigenergy, Tesla and Zappi chargers supplied and installed by Coastal Solar's own crew. Solar-diversion and scheduled charging so you fill the car with daytime solar instead of grid power. Fixed-price quote within 24 hours, covered by the NSW 0% interest loan for eligible homes.</p>
       <ul class="trust">
         <li><i class="fa-solid fa-star"></i>4.6 stars from 21 Google reviews</li>
@@ -524,7 +531,7 @@ body{padding-bottom:80px}
 <!-- SECTION 10: FINAL CTA -->
 <section class="final">
   <div class="container">
-    <h2>Get your EV charger installed before the car arrives.</h2>
+    <h2>Get your fixed-price EV charger installed before the car arrives.</h2>
     <p>Zappi, Tesla and Sigenergy chargers supplied and installed by our own licensed electricians. Fixed price within 24 hours.</p>
     <p>Charge from your own roof, spread the cost at 0% interest if eligible, and deal with one local crew for solar, battery and charger.</p>
     <div class="btn-row">
